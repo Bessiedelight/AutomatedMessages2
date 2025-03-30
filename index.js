@@ -7,7 +7,7 @@ const app = express();
 // Enable CORS for all origins
 app.use(cors());
 
-app.use(express.json()); // Parse JSON request bodies
+app.use(express.json()); // Parse JSON request bodies // Add this line
 
 app.post("/send-sms", smsController.sendSms);
 
